@@ -45,7 +45,7 @@ const fetch = require('node-fetch');
 
     module.exports = (event) => {
       const userId = event.sender.id;
-      const message = event.message.text || event.get_started.payload;
+      const message = event.message.text;
 
       const request = {
         session: sessionPath,
