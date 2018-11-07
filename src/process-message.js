@@ -68,13 +68,3 @@ module.exports = (event) => {
       console.error('ERROR:', err);
     });
 }
-
-sessionClient
-  .detectIntent(request)
-  .then(responses => {
-    const result = responses[0].queryResult;
-    return sendTextMessage(userId, result.fulfillmentText);
-  })
-  .catch(err => {
-    console.error('ERROR:', err);
-  });

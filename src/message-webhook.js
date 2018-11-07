@@ -4,7 +4,7 @@ const processMessage = require('./process-message');
       if (req.body.object === 'page') {
         req.body.entry.forEach(entry => {
           entry.messaging.forEach(event => {
-            if (event.message && event.message.text) {
+            if ((event.message && event.message.text) || (event.postback && event.postback.payload)) {
               processMessage(event);
             }
           });
