@@ -58,6 +58,7 @@ const fetch = require('node-fetch');
       };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   sessionClient
     .detectIntent(request)
     .then(responses => {
@@ -70,6 +71,8 @@ const fetch = require('node-fetch');
     });
 }
 =======
+=======
+>>>>>>> parent of 7c21986... Update get_started button
       sessionClient
         .detectIntent(request)
         .then(responses => {
@@ -79,5 +82,9 @@ const fetch = require('node-fetch');
         .catch(err => {
           console.error('ERROR:', err);
         });
+<<<<<<< HEAD
+    }
+>>>>>>> parent of 7c21986... Update get_started button
+=======
     }
 >>>>>>> parent of 7c21986... Update get_started button
