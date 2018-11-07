@@ -62,7 +62,7 @@ module.exports = (event) => {
     .then(responses => {
       console.log(responses);
       const result = responses[0].queryResult;
-      return sendTextMessage(userId, result.fulfillmentText);
+      return sendTextMessage(userId, responses);
     })
     .catch(err => {
       console.error('ERROR:', err);
