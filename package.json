@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "author": "Huy Ha",
-  "license": "None",
+  "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.4.1",
     "body-parser": "^1.18.3",
